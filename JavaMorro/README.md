@@ -1,3 +1,0 @@
-# BroGramaz
-
-Fun programming!
