@@ -1,4 +1,5 @@
 /*Fibonaccis tallrekke
+ *Et program som går gjennom Fibonaccis tallrekke ved hjelp av en rekursiv metode.
  *
  *@vegardds
  */
