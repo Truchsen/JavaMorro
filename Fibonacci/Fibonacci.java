@@ -7,7 +7,7 @@
 class Fibonacci{
 	private static int n1       =  0; //n1 i tallrekken.
 	private static int n2       =  1; //n2 i tallrekken.
-	private static int index    =  1; //indeksering av tallrekken.
+	private static int index    =  0; //indeksering av tallrekken.
 	private static int maxIndex = 40; //overste indeks i tallrekkken.
 
 	/*main metode
