@@ -6,6 +6,7 @@
 *Todolist:
 *-Add more characters.
 *-Make logic for fighting.
+*-Make list (implements iterator, iterable)
 *-Make UI
 *@vsoyseth
 */
@@ -15,7 +16,7 @@ public class ClobberingTime{
 		MrT fighter1 = new MrT();
 		DrA fighter2 = new DrA();
 
-		System.out.println(fighter1.hit());
-		System.out.println(fighter1.getsHit(102));
+		System.out.println(fighter1 + ": " + fighter1.hit() + " | " + fighter2 + ": " + fighter2.getsHit(50));
+		System.out.println(fighter2 + ": " + fighter2.hit() + " | " + fighter1 + ": " + fighter1.getsHit(101));
 	}
 }
