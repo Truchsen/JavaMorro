@@ -14,6 +14,19 @@ public abstract class FightingCharacter implements Skill{
 		this.name   = name;
 		this.health = 100;
 	}
+	@Override
+	public boolean isDead(){
+		if     (health <  0) health = 0;
+		return  health <= 0;
+	}
+	@Override
+	public String toString(){
+		return name;
+	}
+	@Override
+	public int getHealth(){
+		return health;
+	}
 }
 
 //The classic MrT character from A-Team
@@ -31,17 +44,22 @@ class MrT extends FightingCharacter{
 		if(isDead()) return "Ugh";
 		else         return "Shit son! What yo mama been feeding ya!?";
 	}
-	@Override
-	public String getName(){
-		return name;
+}
+
+//The legendary master of logic at the University of Oslo
+class DrA extends FightingCharacter{
+	public DrA(){
+		super("Dr Antonsen");
 	}
 	@Override
-	public int getHealth(){
-		return health;
+	public String hit(){
+		return "0.9999999... is IN FACT 1! #DPOW#";
 	}
 	@Override
-	public boolean isDead(){
-		return health <= 0;
+	public String getsHit(int damage){
+		health = health - damage;
+		if(isDead()) return "";
+		else         return "I'll never admit that false->true is false";
 	}
 }
 

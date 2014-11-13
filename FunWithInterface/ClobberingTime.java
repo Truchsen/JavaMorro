@@ -13,6 +13,7 @@
 public class ClobberingTime{
 	public static void main(String[] args) {
 		MrT fighter1 = new MrT();
+		DrA fighter2 = new DrA();
 
 		System.out.println(fighter1.hit());
 		System.out.println(fighter1.getsHit(102));
