@@ -21,21 +21,25 @@ class MrT extends FightingCharacter{
 	public MrT(){
 		super("MrT");
 	}
-
+	@Override
 	public String hit(){
 		return "I petty the fool!";
 	}
+	@Override
 	public String getsHit(int damage){
 		health = health - damage;
 		if(isDead()) return "Ugh";
 		else         return "Shit son! What yo mama been feeding ya!?";
 	}
+	@Override
 	public String getName(){
 		return name;
 	}
+	@Override
 	public int getHealth(){
 		return health;
 	}
+	@Override
 	public boolean isDead(){
 		return health <= 0;
 	}
