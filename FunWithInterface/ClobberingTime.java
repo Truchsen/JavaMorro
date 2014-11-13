@@ -2,7 +2,11 @@
 *CloberingTime is a game where to characters fight till their death
 *
 *Sounds awesome right? Well, it is! 
-*NOT FINISHED!
+*NOT FINISHED! 
+*Todolist:
+*-Add more characters.
+*-Make logic for fighting.
+*-Make UI
 *@vsoyseth
 */
 
