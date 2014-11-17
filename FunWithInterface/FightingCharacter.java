@@ -14,7 +14,6 @@ public abstract class FightingCharacter implements Skill{
 		this.name   = name;
 		this.health = 100;
 	}
-	@Override
 	public boolean isDead(){
 		if     (health <  0) health = 0;
 		return  health <= 0;
@@ -23,7 +22,6 @@ public abstract class FightingCharacter implements Skill{
 	public String toString(){
 		return name;
 	}
-	@Override
 	public int getHealth(){
 		return health;
 	}
@@ -34,11 +32,9 @@ class MrT extends FightingCharacter{
 	public MrT(){
 		super("MrT");
 	}
-	@Override
 	public String hit(){
 		return "I petty the fool!";
 	}
-	@Override
 	public String getsHit(int damage){
 		health = health - damage;
 		if(isDead()) return "Ugh";
@@ -51,15 +47,28 @@ class DrA extends FightingCharacter{
 	public DrA(){
 		super("Dr Antonsen");
 	}
-	@Override
 	public String hit(){
-		return "0.9999999... is IN FACT 1! #DPOW#";
+		return "0.9999999... is IN FACT 1! #POW#";
 	}
-	@Override
+	
 	public String getsHit(int damage){
 		health = health - damage;
 		if(isDead()) return "";
 		else         return "I'll never admit that false->true is false";
+	}
+}
+
+class TheJoker extends FightingCharacter{
+	public TheJoker(){
+		super("The Joker");
+	}
+	public String hit(){
+		return "HOHOHOHAHAHA... #DYSJ#";
+	}
+	public String getsHit(int damage){
+		health = health - damage;
+		if(isDead()) return "Why so serious? UUuuuu....";
+		else         return "Auch.";
 	}
 }
 
