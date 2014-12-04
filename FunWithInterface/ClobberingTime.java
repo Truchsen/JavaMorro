@@ -20,6 +20,8 @@ public class ClobberingTime{
 
 		GameCharacterList list = new GameCharacterList();
 
+		new GUI();
+
 		list.add(fighter1);
 		list.add(fighter2);
 		list.add(fighter3);
